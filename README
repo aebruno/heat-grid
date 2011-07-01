@@ -1,5 +1,5 @@
 ===============================================================================
-HeatGrid.js - JavaScript library for creating heat maps using HTML5 canvas
+HeatGrid - JavaScript library for creating heat maps using HTML5 canvas
 ===============================================================================
 
 Example usage:
@@ -15,7 +15,7 @@ Example usage:
 
 CREDITS
 
-HeatGrid.js was written by Andrew E. Bruno <aeb@qnot.org>
+HeatGrid was written by Andrew E. Bruno <aeb@qnot.org>
 
 Gradient functionality ported from Java Heat Map written by Matthew Beckler
 http://www.mbeckler.org/heatMap/

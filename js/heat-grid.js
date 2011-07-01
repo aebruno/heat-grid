@@ -1,5 +1,5 @@
 /*
- * HeatGrid.js
+ * HeatGrid
  * Copyright (C) 2011  Andrew E. Bruno <aeb@qnot.org>
  *
  * Gradient functionality ported from Java Heat Map written by Matthew Beckler.
