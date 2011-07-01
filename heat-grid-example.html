@@ -16,14 +16,14 @@
     </style>
     <script type="text/javascript">
     var gradients = [
-        HeatGrid.GRADIENT_BLACK_TO_WHITE,
+        HeatGrid.GRADIENT_HEAT,
         HeatGrid.GRADIENT_BLUE_TO_RED,
         HeatGrid.GRADIENT_MAROON_TO_GOLD,
         HeatGrid.GRADIENT_RED_TO_GREEN,
         HeatGrid.GRADIENT_GREEN_YELLOW_ORANGE_RED,
         HeatGrid.GRADIENT_RAINBOW,
         HeatGrid.GRADIENT_HOT,
-        HeatGrid.GRADIENT_HEAT,
+        HeatGrid.GRADIENT_BLACK_TO_WHITE,
         HeatGrid.GRADIENT_ROY
     ];
 
@@ -60,14 +60,14 @@
     </tfoot>
     <tbody>
     <tr><th>Gradient: </th><td colspan="5"><select id="gradient">
-            <option value="0">BLACK_TO_WHITE</option>
+            <option value="0">HEAT</option>
             <option value="1">BLUE_TO_RED</option>
             <option value="2">MAROON_TO_GOLD</option>
             <option value="3">RED_TO_GREEN</option>
             <option value="4">GREEN_YELLOW_ORANGE_RED</option>
             <option value="5">RAINBOW</option>
             <option value="6">HOT</option>
-            <option value="7">HEAT</option>
+            <option value="7">BLACK_TO_WHITE</option>
             <option value="8">ROY</option>
         </select></td>
         <td colspan="2" style="text-align:right"><input type="button" id="gen" value="Generate" onclick="randomGrid()" /></td></tr>
