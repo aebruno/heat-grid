@@ -1,6 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!doctype html>
+<html>
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -8,9 +9,10 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/heat-grid.js"></script>
     <style type="text/css">
-      canvas { 
-        border: 1px solid black; 
-      }
+      canvas { border: 1px solid black; }
+      #options { padding-bottom: 15px; }
+      #options th { font-weight:normal; text-align:right; }
+      #options, #options select, #options input { font-size: small; }
     </style>
     <script type="text/javascript">
     var gradients = [
@@ -49,22 +51,32 @@
     </script>
   </head>
   <body>
-    Cols: <input type="text" id="cols" value="48" size="4" />
-    Rows: <input type="text" id="rows" value="32" size="4" />
-    SWidth: <input type="text" id="swidth" value="10" size="4" />
-    SHeight: <input type="text" id="sheight" value="10" size="4" />
-    Gradient: <select id="gradient">
-        <option value="0">BLACK_TO_WHITE</option>
-        <option value="1">BLUE_TO_RED</option>
-        <option value="2">MAROON_TO_GOLD</option>
-        <option value="3">RED_TO_GREEN</option>
-        <option value="4">GREEN_YELLOW_ORANGE_RED</option>
-        <option value="5">RAINBOW</option>
-        <option value="6">HOT</option>
-        <option value="7">HEAT</option>
-        <option value="8">ROY</option>
-    </select>
-    <input type="button" id="gen" value="Generate" onclick="randomGrid()" />
+  <h2>HeatGrid Example</h2>
+    <table id="options">
+    <tfoot>
+        <tr>
+           <td colspan="8" style="text-align: center;font-size:x-small;font-style:italic">* SWidth/SHeight are the size in pixels of each square</td>
+        </tr>
+    </tfoot>
+    <tbody>
+    <tr><th>Gradient: </th><td colspan="5"><select id="gradient">
+            <option value="0">BLACK_TO_WHITE</option>
+            <option value="1">BLUE_TO_RED</option>
+            <option value="2">MAROON_TO_GOLD</option>
+            <option value="3">RED_TO_GREEN</option>
+            <option value="4">GREEN_YELLOW_ORANGE_RED</option>
+            <option value="5">RAINBOW</option>
+            <option value="6">HOT</option>
+            <option value="7">HEAT</option>
+            <option value="8">ROY</option>
+        </select></td>
+        <td colspan="2" style="text-align:right"><input type="button" id="gen" value="Generate" onclick="randomGrid()" /></td></tr>
+        <tr><th>Cols:</th><td><input type="text" id="cols" value="60" size="3" /></td>
+        <th>Rows:</th><td><input type="text" id="rows" value="40" size="3" /></td>
+        <th>SWidth:</th><td><input type="text" id="swidth" value="10" size="3" /></td>
+        <th>SHeight:</th><td><input type="text" id="sheight" value="10" size="3" /></td></tr>
+    </tbody>
+    </table>
     <div>
         <canvas id="grid"></canvas>
     </div>
